@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.live-indicator {
+  background-color: #dc3545;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.match-card {
+  transition: transform 0.2s;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.match-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.sport-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.score {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.team-name {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.match-status {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status-scheduled {
+  color: #6c757d;
+}
+
+.status-live {
+  color: #dc3545;
+}
+
+.status-completed {
+  color: #28a745;
+}
+
+.sidebar {
+  background-color: #343a40;
+  min-height: calc(100vh - 56px);
+  color: white;
+}
+
+.sidebar .nav-link {
+  color: #adb5bd;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  color: white;
+  background-color: #495057;
+}
+
+.main-content {
+  padding: 2rem;
+}
+
+.section-title {
+  color: #343a40;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #f5c6cb;
+  margin-bottom: 1rem;
+}
+
+.favorite-btn {
+  border: none;
+  background: none;
+  color: #ffc107;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.favorite-btn:hover {
+  transform: scale(1.1);
+}
+
+.favorite-btn.active {
+  color: #ff6b35;
+}
