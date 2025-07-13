@@ -62,6 +62,27 @@ public class ExternalSportsApiService {
         }
     }
     
+    public List<Match> getMatchesByDate(int day, int month, int year) {
+        try {
+            System.out.println("🎾 Fetching tennis matches for date: " + day + "/" + month + "/" + year);
+            
+            // Use tennis API service to get matches for specific date
+            List<Match> apiMatches = tennisApiService.getTennisMatchesByDate(day, month, year);
+            
+            if (!apiMatches.isEmpty()) {
+                System.out.println("✅ Found " + apiMatches.size() + " tennis matches for date " + day + "/" + month + "/" + year);
+                return apiMatches;
+            }
+            
+            System.out.println("⚠️ No matches found for date " + day + "/" + month + "/" + year);
+            return new ArrayList<>();
+            
+        } catch (Exception e) {
+            System.err.println("❌ Error fetching tennis matches for date: " + e.getMessage());
+            return new ArrayList<>();
+        }
+    }
+    
     public List<Sport> getAvailableSports() {
         // Focus on tennis tournaments
         List<Sport> sports = new ArrayList<>();

@@ -56,6 +56,16 @@ public class MatchController {
         return ResponseEntity.ok(upcomingMatches);
     }
     
+    @GetMapping("/date/{day}/{month}/{year}")
+    public ResponseEntity<List<Match>> getMatchesByDate(
+            @PathVariable int day,
+            @PathVariable int month,
+            @PathVariable int year) {
+        // Use external API service for date-specific matches
+        List<Match> matches = externalSportsApiService.getMatchesByDate(day, month, year);
+        return ResponseEntity.ok(matches);
+    }
+    
     @GetMapping("/upcoming/sport/{sportId}")
     public ResponseEntity<List<Match>> getUpcomingMatchesBySport(@PathVariable Long sportId) {
         return sportService.getSportById(sportId)

@@ -3,12 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import Navigation from './components/Navigation';
 import Sidebar from './components/Sidebar';
-import Dashboard from './components/Dashboard';
-import LiveMatches from './components/LiveMatches';
-import UpcomingMatches from './components/UpcomingMatches';
-import Sports from './components/Sports';
-import Favorites from './components/Favorites';
-import TennisNotifications from './components/TennisNotifications';
+import TournamentEvents from './components/TournamentEvents';
 
 function App() {
   return (
@@ -22,12 +17,7 @@ function App() {
             </Col>
             <Col md={10} className="main-content">
               <Routes>
-                <Route path="/" element={<Dashboard />} />
-                <Route path="/live" element={<LiveMatches />} />
-                <Route path="/upcoming" element={<UpcomingMatches />} />
-                <Route path="/sports" element={<Sports />} />
-                <Route path="/favorites" element={<Favorites />} />
-                <Route path="/notifications" element={<TennisNotifications />} />
+                <Route path="/" element={<TournamentEvents />} />
               </Routes>
             </Col>
           </Row>
