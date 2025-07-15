@@ -1,14 +1,16 @@
 # 🎾 Tennis Tournament & Event Viewer
 
-A comprehensive tennis tournament and event tracking application built with Spring Boot and React. View real-time tennis tournaments and events from around the world using RapidAPI integration.
+A comprehensive tennis tournament and event tracking application with both web and mobile versions. Built with Spring Boot backend and React/React Native frontends. View real-time tennis tournaments and events from around the world using RapidAPI integration.
 
 ## 🚀 Features
 
 - **70+ Tennis Tournaments**: Browse tournaments across ATP, WTA, Challenger, and more
 - **Real-time Event Data**: Live tournament events with participant information
+- **Cross-Platform**: Web app (React) and mobile app (React Native)
 - **Smart Error Handling**: Proper handling of tournaments with no scheduled matches
 - **Clean UI**: Simplified interface focused on tournament viewing
 - **RapidAPI Integration**: Reliable data fetching with RestTemplate
+- **Mobile Features**: Pull-to-refresh, native navigation, touch-optimized UI
 
 ## 🏗️ Architecture
 
@@ -18,12 +20,20 @@ A comprehensive tennis tournament and event tracking application built with Spri
 - **RestTemplate** for HTTP communication
 - **RapidAPI** integration for tennis data
 - **Static tournament data** for reliability
+- **Cross-platform API** serving both web and mobile
 
-### Frontend (React)
+### Web Frontend (React)
 - **React 18** with modern hooks
 - **Responsive design** with CSS
 - **Real-time data updates**
 - **Error state handling**
+
+### Mobile Frontend (React Native)
+- **TypeScript** for type safety
+- **React Navigation** for native navigation
+- **Native UI components** (FlatList, TouchableOpacity)
+- **Pull-to-refresh** functionality
+- **Cross-platform** (iOS & Android)
 
 ## 📋 Prerequisites
 
@@ -64,6 +74,33 @@ npm start
 ```
 
 The frontend will start on `http://localhost:3000`
+
+### 4. Mobile App Setup (React Native)
+```bash
+# Navigate to mobile app directory
+cd mobile/TennisTournamentApp
+
+# Install dependencies
+npm install
+
+# Start Metro bundler
+npm start
+
+# In another terminal, run on iOS (requires Xcode)
+npx react-native run-ios
+
+# Or run on Android (requires Android Studio)
+npx react-native run-android
+```
+
+📱 **Mobile App Features:**
+- Native iOS and Android apps
+- Pull-to-refresh functionality
+- Touch-optimized tournament browsing
+- Native navigation between screens
+- Same backend API integration as web app
+
+For detailed mobile setup instructions, see [`mobile/MOBILE_SETUP_GUIDE.md`](mobile/MOBILE_SETUP_GUIDE.md)
 
 ## 🔧 Configuration
 

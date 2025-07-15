@@ -1,10 +1,12 @@
 /Users/bhavuk.pahuja/sports-tracker/src/main/java/com/bha/sportsTracker/service/TennisApiService.java
 /Users/bhavuk.pahuja/sports-tracker/src/main/java/com/bha/sportsTracker/entity/Sport.java
-/Users/bhavuk.pahuja/sports-tracker/src/main/java/com/bha/sportsTracker/controller/TennisNotificationController.java
 /Users/bhavuk.pahuja/sports-tracker/src/main/java/com/bha/sportsTracker/service/TennisScrapingService.java
 /Users/bhavuk.pahuja/sports-tracker/src/main/java/com/bha/sportsTracker/entity/Team.java
 /Users/bhavuk.pahuja/sports-tracker/src/main/java/com/bha/sportsTracker/entity/Player.java
+/Users/bhavuk.pahuja/sports-tracker/src/main/java/com/bha/sportsTracker/controller/TournamentController.java
 /Users/bhavuk.pahuja/sports-tracker/src/main/java/com/bha/sportsTracker/controller/MatchController.java
+/Users/bhavuk.pahuja/sports-tracker/src/main/java/com/bha/sportsTracker/service/TournamentService.java
+/Users/bhavuk.pahuja/sports-tracker/src/main/java/com/bha/sportsTracker/service/RapidApiTennisService.java
 /Users/bhavuk.pahuja/sports-tracker/src/main/java/com/bha/sportsTracker/repository/UserRepository.java
 /Users/bhavuk.pahuja/sports-tracker/src/main/java/com/bha/sportsTracker/entity/User.java
 /Users/bhavuk.pahuja/sports-tracker/src/main/java/com/bha/sportsTracker/SportsTrackerApplication.java
@@ -12,7 +14,6 @@
 /Users/bhavuk.pahuja/sports-tracker/src/main/java/com/bha/sportsTracker/controller/SportController.java
 /Users/bhavuk.pahuja/sports-tracker/src/main/java/com/bha/sportsTracker/config/WebClientConfig.java
 /Users/bhavuk.pahuja/sports-tracker/src/main/java/com/bha/sportsTracker/service/UserService.java
-/Users/bhavuk.pahuja/sports-tracker/src/main/java/com/bha/sportsTracker/service/TennisNotificationService.java
 /Users/bhavuk.pahuja/sports-tracker/src/main/java/com/bha/sportsTracker/repository/PlayerRepository.java
 /Users/bhavuk.pahuja/sports-tracker/src/main/java/com/bha/sportsTracker/repository/TeamRepository.java
 /Users/bhavuk.pahuja/sports-tracker/src/main/java/com/bha/sportsTracker/repository/SportRepository.java
